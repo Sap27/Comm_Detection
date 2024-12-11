@@ -1,19 +1,19 @@
 This python module contains the codes for implementing 21 community detection algorithms.The  module community_detection_1 can be imported in an 
 external script or can be accesed through the CLI. 
 
-----Requirements---
+#Requirements
 Java version 23.01
 R version >=4.2
 Python Version>=3.10( python Libraries required are mentioned in the setup.py file)
 WSL Environment
 
----How to Install--
+#How to Install
 1. Go to the directory containing the downloaded package in the terminal.
 2. Run the below command
 
 pip install -e .
 
----How to Run the Program--
+#How to Run the Program--
 
 The python module takes in an edgelist file or a networkx graph as input and returns a list of list containing the communities and optionally writes the output into .txt file when the path for the same is provided. An example usage utlising the python CLI is highlighted below. 
 
@@ -79,6 +79,8 @@ General Algorithm Args
     1.most_valuable_edge=(tuple (u,v))
 
 Example for importing in an external python script
+
+
 import community_detection_1.main as main
 res= main.run_community_detection('network.dat','exp-laplacian_kernel')
 
